@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271FE62913DB25CC004F502E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FE62813DB25CC004F502E /* UIKit.framework */; };
+		271FE62B13DB25CC004F502E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FE62A13DB25CC004F502E /* Foundation.framework */; };
+		271FE62D13DB25CC004F502E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271FE62C13DB25CC004F502E /* CoreGraphics.framework */; };
+		271FE63313DB25CC004F502E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 271FE63113DB25CC004F502E /* InfoPlist.strings */; };
+		271FE63513DB25CC004F502E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE63413DB25CC004F502E /* main.m */; };
+		271FE63913DB25CC004F502E /* FrenchQuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE63813DB25CC004F502E /* FrenchQuizAppDelegate.m */; };
+		271FE63C13DB25CC004F502E /* FrenchQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE63B13DB25CC004F502E /* FrenchQuizViewController.m */; };
+		271FE63F13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271FE63D13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib */; };
+		271FE64213DB25CC004F502E /* FrenchQuizViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271FE64013DB25CC004F502E /* FrenchQuizViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		271FE62413DB25CC004F502E /* FrenchQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrenchQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271FE62813DB25CC004F502E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		271FE62A13DB25CC004F502E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		271FE62C13DB25CC004F502E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		271FE63013DB25CC004F502E /* FrenchQuiz-Info.plist */ = {isa = PBXFileReference; path = "FrenchQuiz-Info.plist"; sourceTree = "<group>"; };
+		271FE63213DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		271FE63413DB25CC004F502E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		271FE63613DB25CC004F502E /* FrenchQuiz-Prefix.pch */ = {isa = PBXFileReference; path = "FrenchQuiz-Prefix.pch"; sourceTree = "<group>"; };
+		271FE63713DB25CC004F502E /* FrenchQuizAppDelegate.h */ = {isa = PBXFileReference; path = FrenchQuizAppDelegate.h; sourceTree = "<group>"; };
+		271FE63813DB25CC004F502E /* FrenchQuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchQuizAppDelegate.m; sourceTree = "<group>"; };
+		271FE63A13DB25CC004F502E /* FrenchQuizViewController.h */ = {isa = PBXFileReference; path = FrenchQuizViewController.h; sourceTree = "<group>"; };
+		271FE63B13DB25CC004F502E /* FrenchQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchQuizViewController.m; sourceTree = "<group>"; };
+		271FE63E13DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FrenchQuizViewController_iPhone.xib; sourceTree = "<group>"; };
+		271FE64113DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FrenchQuizViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		271FE62113DB25CC004F502E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271FE62913DB25CC004F502E /* UIKit.framework in Frameworks */,
+				271FE62B13DB25CC004F502E /* Foundation.framework in Frameworks */,
+				271FE62D13DB25CC004F502E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		271FE61913DB25CB004F502E = {
+			isa = PBXGroup;
+			children = (
+				271FE62E13DB25CC004F502E /* FrenchQuiz */,
+				271FE62713DB25CC004F502E /* Frameworks */,
+				271FE62513DB25CC004F502E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		271FE62513DB25CC004F502E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				271FE62413DB25CC004F502E /* FrenchQuiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		271FE62713DB25CC004F502E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271FE62813DB25CC004F502E /* UIKit.framework */,
+				271FE62A13DB25CC004F502E /* Foundation.framework */,
+				271FE62C13DB25CC004F502E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		271FE62E13DB25CC004F502E /* FrenchQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				271FE63713DB25CC004F502E /* FrenchQuizAppDelegate.h */,
+				271FE63813DB25CC004F502E /* FrenchQuizAppDelegate.m */,
+				271FE63A13DB25CC004F502E /* FrenchQuizViewController.h */,
+				271FE63B13DB25CC004F502E /* FrenchQuizViewController.m */,
+				271FE63D13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib */,
+				271FE64013DB25CC004F502E /* FrenchQuizViewController_iPad.xib */,
+				271FE62F13DB25CC004F502E /* Supporting Files */,
+			);
+			path = FrenchQuiz;
+			sourceTree = "<group>";
+		};
+		271FE62F13DB25CC004F502E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				271FE63013DB25CC004F502E /* FrenchQuiz-Info.plist */,
+				271FE63113DB25CC004F502E /* InfoPlist.strings */,
+				271FE63413DB25CC004F502E /* main.m */,
+				271FE63613DB25CC004F502E /* FrenchQuiz-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		271FE62313DB25CC004F502E /* FrenchQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 271FE64513DB25CC004F502E /* Build configuration list for PBXNativeTarget "FrenchQuiz" */;
+			buildPhases = (
+				271FE62013DB25CC004F502E /* Sources */,
+				271FE62113DB25CC004F502E /* Frameworks */,
+				271FE62213DB25CC004F502E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrenchQuiz;
+			productName = FrenchQuiz;
+			productReference = 271FE62413DB25CC004F502E /* FrenchQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		271FE61B13DB25CB004F502E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 271FE61E13DB25CB004F502E /* Build configuration list for PBXProject "FrenchQuiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 271FE61913DB25CB004F502E;
+			productRefGroup = 271FE62513DB25CC004F502E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				271FE62313DB25CC004F502E /* FrenchQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		271FE62213DB25CC004F502E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271FE63313DB25CC004F502E /* InfoPlist.strings in Resources */,
+				271FE63F13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib in Resources */,
+				271FE64213DB25CC004F502E /* FrenchQuizViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		271FE62013DB25CC004F502E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				271FE63513DB25CC004F502E /* main.m in Sources */,
+				271FE63913DB25CC004F502E /* FrenchQuizAppDelegate.m in Sources */,
+				271FE63C13DB25CC004F502E /* FrenchQuizViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		271FE63113DB25CC004F502E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271FE63213DB25CC004F502E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		271FE63D13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271FE63E13DB25CC004F502E /* en */,
+			);
+			name = FrenchQuizViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		271FE64013DB25CC004F502E /* FrenchQuizViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				271FE64113DB25CC004F502E /* en */,
+			);
+			name = FrenchQuizViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		271FE64313DB25CC004F502E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		271FE64413DB25CC004F502E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		271FE64613DB25CC004F502E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrenchQuiz/FrenchQuiz-Prefix.pch";
+				INFOPLIST_FILE = "FrenchQuiz/FrenchQuiz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		271FE64713DB25CC004F502E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrenchQuiz/FrenchQuiz-Prefix.pch";
+				INFOPLIST_FILE = "FrenchQuiz/FrenchQuiz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		271FE61E13DB25CB004F502E /* Build configuration list for PBXProject "FrenchQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271FE64313DB25CC004F502E /* Debug */,
+				271FE64413DB25CC004F502E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		271FE64513DB25CC004F502E /* Build configuration list for PBXNativeTarget "FrenchQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				271FE64613DB25CC004F502E /* Debug */,
+				271FE64713DB25CC004F502E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 271FE61B13DB25CB004F502E /* Project object */;
+}
