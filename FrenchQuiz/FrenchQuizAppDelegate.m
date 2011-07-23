@@ -11,9 +11,17 @@
 #import "FrenchQuizViewController.h"
 
 @implementation FrenchQuizAppDelegate
+@synthesize quiz;
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+
+- (id)init
+{
+    self = [super init];
+     
+    return self;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -24,7 +32,11 @@
     } else {
         self.viewController = [[FrenchQuizViewController alloc] initWithNibName:@"FrenchQuizViewController_iPad" bundle:nil]; 
     }
+    
+    [self setQuiz:[[Quiz alloc] init]];
     self.window.rootViewController = self.viewController;
+    
+    quiz = [[Quiz alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -66,6 +78,21 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+- (IBAction)showAnswer:(id)sender
+{
+    return;
+}
+
+- (IBAction)nextQuestion:(id)sender
+{
+    return;
+}
+
+- (IBAction)randomQuestion:(id)sender
+{
+    return;
 }
 
 @end

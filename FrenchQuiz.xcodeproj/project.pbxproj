@@ -16,6 +16,8 @@
 		271FE63C13DB25CC004F502E /* FrenchQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE63B13DB25CC004F502E /* FrenchQuizViewController.m */; };
 		271FE63F13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271FE63D13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib */; };
 		271FE64213DB25CC004F502E /* FrenchQuizViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271FE64013DB25CC004F502E /* FrenchQuizViewController_iPad.xib */; };
+		271FE64A13DB25FA004F502E /* QuizQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE64913DB25FA004F502E /* QuizQuestion.m */; };
+		271FE64D13DB2820004F502E /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FE64C13DB2820004F502E /* Quiz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,20 @@
 		271FE62813DB25CC004F502E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		271FE62A13DB25CC004F502E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		271FE62C13DB25CC004F502E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		271FE63013DB25CC004F502E /* FrenchQuiz-Info.plist */ = {isa = PBXFileReference; path = "FrenchQuiz-Info.plist"; sourceTree = "<group>"; };
+		271FE63013DB25CC004F502E /* FrenchQuiz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrenchQuiz-Info.plist"; sourceTree = "<group>"; };
 		271FE63213DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		271FE63413DB25CC004F502E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		271FE63613DB25CC004F502E /* FrenchQuiz-Prefix.pch */ = {isa = PBXFileReference; path = "FrenchQuiz-Prefix.pch"; sourceTree = "<group>"; };
-		271FE63713DB25CC004F502E /* FrenchQuizAppDelegate.h */ = {isa = PBXFileReference; path = FrenchQuizAppDelegate.h; sourceTree = "<group>"; };
+		271FE63613DB25CC004F502E /* FrenchQuiz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrenchQuiz-Prefix.pch"; sourceTree = "<group>"; };
+		271FE63713DB25CC004F502E /* FrenchQuizAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrenchQuizAppDelegate.h; sourceTree = "<group>"; };
 		271FE63813DB25CC004F502E /* FrenchQuizAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchQuizAppDelegate.m; sourceTree = "<group>"; };
-		271FE63A13DB25CC004F502E /* FrenchQuizViewController.h */ = {isa = PBXFileReference; path = FrenchQuizViewController.h; sourceTree = "<group>"; };
+		271FE63A13DB25CC004F502E /* FrenchQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrenchQuizViewController.h; sourceTree = "<group>"; };
 		271FE63B13DB25CC004F502E /* FrenchQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrenchQuizViewController.m; sourceTree = "<group>"; };
 		271FE63E13DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FrenchQuizViewController_iPhone.xib; sourceTree = "<group>"; };
 		271FE64113DB25CC004F502E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FrenchQuizViewController_iPad.xib; sourceTree = "<group>"; };
+		271FE64813DB25FA004F502E /* QuizQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizQuestion.h; sourceTree = "<group>"; };
+		271FE64913DB25FA004F502E /* QuizQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizQuestion.m; sourceTree = "<group>"; };
+		271FE64B13DB2820004F502E /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		271FE64C13DB2820004F502E /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				271FE62E13DB25CC004F502E /* FrenchQuiz */,
-				271FE62713DB25CC004F502E /* Frameworks */,
 				271FE62513DB25CC004F502E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 				271FE62C13DB25CC004F502E /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		271FE62E13DB25CC004F502E /* FrenchQuiz */ = {
@@ -86,6 +92,11 @@
 				271FE63D13DB25CC004F502E /* FrenchQuizViewController_iPhone.xib */,
 				271FE64013DB25CC004F502E /* FrenchQuizViewController_iPad.xib */,
 				271FE62F13DB25CC004F502E /* Supporting Files */,
+				271FE64813DB25FA004F502E /* QuizQuestion.h */,
+				271FE62713DB25CC004F502E /* Frameworks */,
+				271FE64B13DB2820004F502E /* Quiz.h */,
+				271FE64C13DB2820004F502E /* Quiz.m */,
+				271FE64913DB25FA004F502E /* QuizQuestion.m */,
 			);
 			path = FrenchQuiz;
 			sourceTree = "<group>";
@@ -164,6 +175,8 @@
 				271FE63513DB25CC004F502E /* main.m in Sources */,
 				271FE63913DB25CC004F502E /* FrenchQuizAppDelegate.m in Sources */,
 				271FE63C13DB25CC004F502E /* FrenchQuizViewController.m in Sources */,
+				271FE64A13DB25FA004F502E /* QuizQuestion.m in Sources */,
+				271FE64D13DB2820004F502E /* Quiz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +262,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrenchQuiz/FrenchQuiz-Prefix.pch";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "FrenchQuiz/FrenchQuiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -260,8 +275,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FrenchQuiz/FrenchQuiz-Prefix.pch";
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "FrenchQuiz/FrenchQuiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -285,6 +302,7 @@
 				271FE64713DB25CC004F502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
