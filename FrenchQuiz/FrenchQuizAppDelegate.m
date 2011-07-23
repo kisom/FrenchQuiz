@@ -11,7 +11,6 @@
 #import "FrenchQuizViewController.h"
 
 @implementation FrenchQuizAppDelegate
-@synthesize quiz;
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
@@ -33,10 +32,9 @@
         self.viewController = [[FrenchQuizViewController alloc] initWithNibName:@"FrenchQuizViewController_iPad" bundle:nil]; 
     }
     
-    [self setQuiz:[[Quiz alloc] init]];
     self.window.rootViewController = self.viewController;
     
-    quiz = [[Quiz alloc] init];
+
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -62,6 +60,7 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -80,19 +79,5 @@
      */
 }
 
-- (IBAction)showAnswer:(id)sender
-{
-    return;
-}
-
-- (IBAction)nextQuestion:(id)sender
-{
-    return;
-}
-
-- (IBAction)randomQuestion:(id)sender
-{
-    return;
-}
 
 @end

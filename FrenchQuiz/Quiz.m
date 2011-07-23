@@ -18,16 +18,34 @@
         questionBank = [[NSMutableArray alloc] init];
         currentIndex = 0;
         [self addQuestion:@"I am" answer:@"Je suis"];
-        [self addQuestion:@"You are" answer:@"Tu es"];
+        [self addQuestion:@"You (informal) are" answer:@"Tu es"];
+        [self addQuestion:@"He is" answer:@"Il est"];
+        [self addQuestion:@"She is" answer:@"Elle est"];
+        [self addQuestion:@"We are" answer:@"Nous somme / on est"];
+        [self addQuestion:@"You (formal) are" answer:@"Vous etre"];
+        [self addQuestion:@"They are (masculine)" answer:@"Ils sont"];
+        [self addQuestion:@"They are (feminine)" answer:@"Elles sont"];
+
+        [self addQuestion:@"I have" answer:@"J'ai"];
+        [self addQuestion:@"You (informal) have" answer:@"Tu as"];
+        [self addQuestion:@"He has" answer:@"Il a"];
+        [self addQuestion:@"She has" answer:@"Elle a"];
+        [self addQuestion:@"We have" answer:@"Nous avons / on a"];
+        [self addQuestion:@"You (formal) have" answer:@"Vous avez"];
+        [self addQuestion:@"They have (masculine)" answer:@"Ils ont"];
+        [self addQuestion:@"They have (feminine)" answer:@"Elles ont"];
+
     }
     
     return self;
 }
 
-- (void)addQuestion:(NSString *)q answer:(NSString *)a
+- (void)addQuestion:(NSString *)question answer:(NSString *)answer
 {
-    QuizQuestion *question = [[QuizQuestion alloc] initWithQuestion:q answer:a];
-    [questionBank addObject:question];
+    QuizQuestion *tempQuestion = [[QuizQuestion alloc] 
+                                  initWithQuestion:question 
+                                  answer:answer];
+    [questionBank addObject:tempQuestion];
 }
 
 - (QuizQuestion *)getThisQuestion 
@@ -38,8 +56,12 @@
 
 - (QuizQuestion *)getNextQuestion
 {
-    QuizQuestion *question = [self getThisQuestion];
     currentIndex++;
+    
+    if (currentIndex == [questionBank count])
+        currentIndex = 0;
+
+    QuizQuestion *question = [self getThisQuestion];
     return question;
 }
 

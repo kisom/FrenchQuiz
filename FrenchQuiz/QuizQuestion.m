@@ -22,6 +22,7 @@
 
 - (id)init
 {
+    NSAssert(YES, @"Please to be usink initWithQuestion instead of init...");
     self = [super init];
     if (self) {
         // Initialization code here.

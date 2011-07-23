@@ -9,6 +9,18 @@
 #import "FrenchQuizViewController.h"
 
 @implementation FrenchQuizViewController
+@synthesize quiz;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    quiz = [[Quiz alloc] init];
+    NSString *tempQuestion = [[quiz getThisQuestion] question];
+    NSLog(@"current question: %@", tempQuestion );
+    [questionField setText:tempQuestion];
+    
+    return self;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -61,5 +73,24 @@
     }
 }
 
+- (IBAction)showAnswer:(id)sender
+{
+    QuizQuestion *tempQuestion = [quiz getThisQuestion];
+    [answerField setText:[tempQuestion answer]];
+}
+
+- (IBAction)nextQuestion:(id)sender
+{
+    NSString *tempQuestion = [[quiz getNextQuestion] question];
+    [questionField setText:tempQuestion];
+    [answerField setText:@""];
+}
+
+- (IBAction)randomQuestion:(id)sender
+{
+    NSString *tempQuestion = [[quiz getRandomQuestion] question];
+    [questionField setText:tempQuestion];
+    [answerField setText:@""];    
+}
 
 @end

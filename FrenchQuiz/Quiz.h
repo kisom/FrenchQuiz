@@ -17,7 +17,7 @@
 
 @property int currentIndex;
 
-- (void)addQuestion:(NSString *)q answer:(NSString *)a;
+- (void)addQuestion:(NSString *)question answer:(NSString *)answer;
 - (QuizQuestion *)getThisQuestion;
 - (QuizQuestion *)getNextQuestion;
 - (QuizQuestion *)getRandomQuestion;

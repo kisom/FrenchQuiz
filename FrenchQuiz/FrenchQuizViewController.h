@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Quiz.h"
 
 @interface FrenchQuizViewController : UIViewController
+{
+    Quiz *quiz;
+    IBOutlet UILabel *questionField;
+    IBOutlet UILabel *answerField;
+
+}
+@property (nonatomic, retain) Quiz *quiz;
+
+- (IBAction)nextQuestion:(id)sender;
+- (IBAction)randomQuestion:(id)sender;
+- (IBAction)showAnswer:(id)sender;
 
 @end
